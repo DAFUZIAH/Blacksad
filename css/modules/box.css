@@ -1,0 +1,56 @@
+.box {
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-comic-text  {
+    max-width: 50%;
+    position: absolute;
+    top: 10vh;
+    opacity: 0;
+    /* transform: translate(-3em, 5em); */
+    transition: 1.2s ease-out;
+}
+
+.first-caption {
+    left: 0;
+}
+
+.second-caption {
+    right: 0;
+}
+
+.third-caption {
+    top: 2em;
+    left: 2em;
+}
+
+.sixth-caption {
+    top: 8em;
+}
+
+.seventh-caption {
+    top: -5em;
+}
+
+.eighth-caption {
+    top: 5em;
+    left: 0;
+}
+
+.ninth-caption {
+    left: 0;
+    top: -1em;
+}
+
+.tenth-caption {
+    top: 0;
+}
+
+.eleventh-caption {
+    position: relative;
+    top: 0;
+}

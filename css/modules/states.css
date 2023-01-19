@@ -1,0 +1,27 @@
+.is-removed {
+    display: none;
+}
+
+.is-visible {
+    opacity: 100%;
+}
+
+.is-colored {
+    color: var(--yellow-color);
+    opacity: 1;
+    position: relative;
+}
+
+.is-colored::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--yellow-color);
+    left: 0;
+    bottom: -5px;
+}
+
+.has-no-scroll {
+    overflow-y: hidden;
+}

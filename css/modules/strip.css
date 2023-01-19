@@ -1,0 +1,205 @@
+.strip {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .8s ease-out;
+}
+
+.strip-call-to-action {
+    position: absolute;
+    font-size: 26px;
+    padding: 15px;
+    cursor: pointer;
+    transition: .3s ease-out;
+    background: rgba(15,15,15,0.75);
+    z-index: 100;
+}
+
+.strip-call-to-action:hover {
+    color: var(--yellow-color);
+}
+
+.strip-call-to-action::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-out;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='white' stroke-width='2' stroke-dasharray='8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.strip-call-to-action:hover::after {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23F9E400FF' stroke-width='2' stroke-dasharray='8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.strip-content {
+    position: relative;
+}
+
+/* CRIME SCENE */
+
+.button-to-office {
+    bottom: 5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* POLICE OFFICE */
+
+.strip.police-office {
+    background-image: url(../../img/backgrounds/background-office.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+
+.police-office .strip-content {
+    position: absolute;
+    display: flex;
+    width: 75%;
+    bottom: -10em;
+    right: 0;
+}
+
+
+.jake,
+.bag {
+    opacity: 0;
+    transform: translateY(50em);
+    transition: 1s ease-out;
+}
+
+.bag {
+    transition-delay: .8s;
+}
+
+.jake.is-visible,
+.bag.is-visible {
+    opacity: 100%;
+    transform: translateY(0);
+}
+
+
+.police-office .strip-content-image.jake{
+    right: 15em;
+}
+
+.police-office .strip-content-image.bag {
+    right: -5em;
+}
+
+.button-to-jake {
+    top: 50vh;
+}
+
+.is-visible {
+    opacity: 100%;
+}
+
+/* .strip.police-office.office-reveal {
+    opacity: 100%
+} */
+
+/* LEON HOME */
+
+.leon-home .strip-content {
+    width: 100%;
+    display: flex;
+}
+
+.leon-home .strip-content-image {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.leon-home .strip-content-image.appart {
+    left: 0;
+    width: 100%;
+}
+
+.leon-home .strip-content-image.card {
+    width: 100%;
+}
+
+.card {
+    opacity: 0;
+    transition: .8s ease-out;
+}
+
+.card.is-visible {
+    opacity: 1;
+}
+
+.button-to-inspect {
+    left: 25%;
+    top: 40%;
+}
+
+/* CYPHER CLUB */
+
+.button-to-collect {
+    bottom: 25%;
+    left: 10%;
+}
+
+/* RAT DISCUSSION */
+
+.strip.rat-discussion .strip-content {
+    display: flex;
+}
+
+/* CEMETERY */
+
+.strip.cemetery {
+    height: 150vh;
+    background-image: url(../../img/backgrounds/background-cemetery.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -5em;
+}
+
+.strip.cemetery .strip-content {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    bottom: -20em;
+}
+
+.button-to-grave {
+    bottom: 25%;
+    left: 30%;
+}
+
+.grave {
+    opacity: 0;
+    transition: .8s ease-out;
+}
+
+.grave.is-visible {
+    opacity: 1;
+}
+
+/* BLACKSAD HOME */
+
+.strip.blacksad-home {
+    background-image: url(../../img/backgrounds/background-appartement.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.strip.blacksad-home .strip {
+    align-items: flex-end;
+}
+
+.button-to-video {
+    bottom: 5em;
+    left: 50%;
+    transform: translateX(-50%);
+}

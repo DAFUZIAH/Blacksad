@@ -1,0 +1,18 @@
+.flickity-button,
+.flickity-button:active,
+.flickity-button:hover,
+.flickity-button:focus {
+	background: transparent;
+}
+
+.flickity-button-icon {
+	fill: var(--white-color);
+}
+
+.flickity-button:disabled {
+	display: none;
+}
+
+.flickity-button:hover .flickity-button-icon {
+	fill: var(--yellow-color);
+}

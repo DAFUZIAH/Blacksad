@@ -1,0 +1,23 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main {
+    position: relative;
+}
+
+.background-texture {
+    background-image: url(../img/textures/paper-background.webp);
+    background-repeat: repeat-y;
+    background-size: 50% cover;
+    mix-blend-mode: overlay;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}

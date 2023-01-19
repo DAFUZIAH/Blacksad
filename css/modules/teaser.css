@@ -1,0 +1,18 @@
+.teaser {
+    height: 100vh;
+    opacity: 0;
+    transition: .8s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teaser video {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+}
+
+.teaser.is-visible {
+    opacity: 1;
+}
